@@ -13,41 +13,45 @@
     background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Nihang_with_chakkar.jpg/800px-Nihang_with_chakkar.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #222;
-    position: relative;
   }
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-color: rgba(255, 255, 255, 0.5); /* Adjusted opacity */
-    pointer-events: none;
-    z-index: -1;
+
+  /* Slightly darker translucent background behind text for readability */
+  header, main, footer {
+    background-color: rgba(255, 255, 255, 0.75); /* Less white = more image visibility */
+    backdrop-filter: blur(2px); /* optional: soft blur effect */
   }
+
   header {
-    background: linear-gradient(to right, #f4b400, #f78104);
+    background: linear-gradient(to right, #f4b400cc, #f78104cc); /* semi-transparent gradient */
     color: white;
     padding: 2rem 1rem;
     text-align: center;
   }
+
   main {
     padding: 2rem 1rem;
     max-width: 800px;
     margin: auto;
   }
+
   .section {
     margin-bottom: 2rem;
   }
+
   h2 {
     color: #f78104;
   }
+
   .prizes ul {
     list-style: none;
     padding: 0;
   }
+
   .prizes li::before {
     content: '🏅';
     margin-right: 10px;
   }
+
   .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -59,10 +63,11 @@
     margin-right: 10px;
     margin-top: 10px;
   }
+
   footer {
     text-align: center;
     padding: 1rem;
-    background-color: #eee;
+    background-color: rgba(255, 255, 255, 0.75);
     font-size: 0.9rem;
   }
 </style>
