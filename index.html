@@ -12,32 +12,58 @@
       padding: 0;
       background-color: #f8f9fa;
       color: #222;
+
+      /* Background image settings */
+      background-image: url('https://www.pngall.com/wp-content/uploads/2016/06/Sikh-Turban.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      position: relative;
+      min-height: 100vh;
     }
+
+    /* Overlay for better readability */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(255, 255, 255, 0.85);
+      pointer-events: none;
+      z-index: -1;
+    }
+
     header {
       background: linear-gradient(to right, #f4b400, #f78104);
-      color: white; 
+      color: white;
       padding: 2rem 1rem;
       text-align: center;
     }
+
     main {
       padding: 2rem 1rem;
       max-width: 800px;
       margin: auto;
     }
+
     .section {
       margin-bottom: 2rem; 
     }
+
     h2 {
       color: #f78104;
     }
+
     .prizes ul {
       list-style: none;
       padding: 0;
     }
+
     .prizes li::before {
       content: '🏅';
       margin-right: 10px;
     }
+
     .btn {
       display: inline-block;
       padding: 10px 20px;
@@ -47,8 +73,8 @@
       text-decoration: none;
       font-weight: bold;
       margin-right: 10px;
-      margin-bottom: 10px;
     }
+
     footer {
       text-align: center;
       padding: 1rem;
@@ -82,9 +108,9 @@
 
     <section class="section">
       <h2>How to Participate</h2>
-      <p>Please fill out the registration form to confirm your participation. All important details and rules are listed in the form.</p>
-      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSflniDMVZ4Uh2GZi4eFzqEsWB14t9kj1b8ZTwVe31t6XByCaw/viewform?usp=header" target="_blank" title="Register Now for the Turban Tying Competition">Register Now for the Turban Tying Competition</a>
-      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScO2bhACJvKeewQEFpkz6LYBvUdOSZCmMKfLBMtjZ3L9CkHZw/viewform?usp=header" target="_blank" title="Register Now for the Drawing and Colouring Competition">Register Now for the Drawing and Colouring Competition</a>
+      <p>Please fill out the registration forms to confirm your participation. All important details and rules are listed in the forms.</p>
+      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSflniDMVZ4Uh2GZi4eFzqEsWB14t9kj1b8ZTwVe31t6XByCaw/viewform?usp=header" target="_blank" title="Register Now for the Turban Tying Competition">Register Now (Turban Tying)</a>
+      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScO2bhACJvKeewQEFpkz6LYBvUdOSZCmMKfLBMtjZ3L9CkHZw/viewform?usp=header" target="_blank" title="Register Now for the Drawing and Colouring Competition">Register Now (Drawing & Colouring)</a>
     </section>
 
     <section class="section">
@@ -98,4 +124,4 @@
     © 2025 Turban Tying & Drawing Competition Committee
   </footer>
 </body>
-</html> 
+</html>
